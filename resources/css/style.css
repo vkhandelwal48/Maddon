@@ -1,0 +1,527 @@
+/* -----------------------------------------*/
+/* BASIC SETUP*/
+/* -----------------------------------------*/
+
+*{
+    padding:0;
+    margin:0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color:#fff;
+    color:#555;
+    font-family: 'Lato','Arial',sans-serif;
+    font-weight:300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x:hidden;
+}
+
+/* -----------------------------------------*/
+/* REUSABLE COMPONENTS*/
+/* -----------------------------------------*/
+
+.row{
+    max-width:1140px;
+    margin:0 auto;
+}
+
+section{
+    padding:80px 0;
+}
+/* -----------------------------------------*/
+/* HEADINGS*/
+/* -----------------------------------------*/
+
+h1,h2,h3{
+    font-weight: 300;
+    text-transform:uppercase;
+}
+
+h1{
+    margin-top:0;
+    margin-bottom: 20px;
+    color:#fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size:180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after{
+    display: block;
+    height:2px;
+    background-color: #000;
+    content: " ";
+    width:100px;
+    margin:0 auto;
+    margin-bottom: 30px;
+}
+
+.big{
+    -webkit-text-decoration:;
+    text-decoration:
+}
+
+.Xbox-One h1{
+    text-align: center;
+}
+
+/* -----------------------------------------*/
+/* PARAGRAPHS*/
+/* -----------------------------------------*/
+
+.long-copy{
+    line-height:145%;
+    width:70%;
+    margin-left:21%;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.box{
+    padding:1%;
+}
+
+.para{
+    margin-bottom: 30px;
+}
+
+.start{
+    text-align: center;
+}
+
+
+/* -----------------------------------------*/
+/* ICONS*/
+/* -----------------------------------------*/
+
+.icon-big{
+    font-size:400%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.icon-small{
+    font-size: 200%;
+    margin-right: 15px;
+}
+
+/* -----------------------------------------*/
+/* BUTTONS*/
+/* -----------------------------------------*/
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display:inline-block;
+    padding:10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color:#fff;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    margin-right: 15px;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]
+{
+    border:1px solid #09010b;
+    background-color: #09010b;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #09010b;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:hover
+{
+    background-color:#343434;
+}
+
+
+/* -----------------------------------------*/
+/* HEADER*/
+/* -----------------------------------------*/
+
+header{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0.7))),url(img/hero.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/hero.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+}
+
+.hero-text-box{
+    position: absolute;
+    width:1140px;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+}
+
+/* Main Navigation */
+.main-nav{
+    float:right;
+    list-style:none;
+    margin-top:55px;
+}
+
+.main-nav li{
+    display:inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding:8px 0;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition:border-bottom 0.2s;
+    transition:border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #09010b;
+}
+
+/*Sticky Navigation */
+.sticky{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color:rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index:9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding:20px 0;
+    color:#000;
+}
+
+.sticky .main-nav{
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+/*Mobile Navigation*/
+
+.mobile-nav-icon{
+    float:right;
+    margin-right:30px;
+    cursor:pointer;
+    display:none;
+}
+
+.mobile-nav-icon i{
+    font-size:200%;
+    color:#fff;
+}
+
+/* -----------------------------------------*/
+/* HEADER*/
+/* -----------------------------------------*/
+
+.section-games{
+    padding:0;
+}
+.games-showcase{
+    list-style:none;
+    width:100%;
+}
+
+.games-showcase li{
+    display:block;
+    float: left;
+    width:25%; 
+}
+
+.game-photo{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.game-photo img{
+    opacity:0.7;
+    width: 100%;
+    height:300px;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: opacity 0.5s,-webkit-transform 0.5s;
+    transition: opacity 0.5s,-webkit-transform 0.5s;
+    transition: transform 0.5s,opacity 0.5s;
+    transition: transform 0.5s,opacity 0.5s,-webkit-transform 0.5s;
+}
+
+.game-photo img:hover{
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.steps-box{
+    margin-top: 30px;
+}
+
+.steps-box:first-child{
+    text-align:right;
+    padding-right:3%;
+}
+
+.steps-box:last-child{
+    padding-left:3%;
+}
+
+.Xbox{
+    width:70%;
+}
+.Gameplay{
+    width:100%;
+    height: 700px;
+    margin-bottom: 60px;
+}
+.Xbox-One-S{
+    width:100%;
+    height: 700px;
+}
+
+.HDR{
+    width:90%;
+}
+
+.Xbox-One{
+    background-image:url(img/Xbox%20One1.jpg);
+    width:100%;
+    height:500px; 
+}  
+
+.PS4{
+    background-image: url(img/PS4.jpg);
+    width:100%;
+    height:500px;
+}
+
+.VR{
+    width:70%;
+    margin-bottom: 50px;
+}
+
+.game{
+     width:90%;
+     margin-bottom: 50px;
+}
+
+
+/* -----------------------------------------*/
+/* Sign Up*/
+/* -----------------------------------------*/
+
+.section-plans{
+    background-color: #f4f4f4;
+} 
+
+.plan-box{
+    background-color:#fff;
+    border-radius:5px;
+    width:90%;
+    margin-left:5%;
+    -webkit-box-shadow: 0 2px 2px #ead9d9;
+    box-shadow: 0 2px 2px #ead9d9;
+}
+
+.plan-box div{
+    padding:15px;
+    border-bottom:1px solid #fff;
+}
+
+.plan-price{
+    font-size:300%;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
+}
+
+.plan-box div:first-child{
+    background-color: #2c2525;
+    color:#fff;
+    border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border:0;
+}
+
+/* -----------------------------------------*/
+/* FORM*/
+/* -----------------------------------------*/
+
+.contact-form{
+    width:60%;
+    margin:0 30%;
+}
+
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height:100px;
+}
+
+*:focus{
+    outline:none;
+}
+
+input[type=submit]{
+    margin: 0 35%;
+}
+
+/* -----------------------------------------*/
+/* FOOTER*/
+/* -----------------------------------------*/
+
+footer{
+    background-color:#333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav{
+    list-style: none;
+    float:left;
+}
+
+.social-links{
+    list-style: none;
+    float:right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+        margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a :link,
+.social-links li a :active
+{
+    text-decoration: none;
+    border:0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color:#ddd;
+}
+
+.social-links li a:link,
+.soical-links li a:visited{
+    font-size: 160%;
+}
+
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-instagram,
+.ion-logo-snapchat
+{
+    color:#888;
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* -----------------------------------------*/
+/* Animations*/
+/* -----------------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5,
+.js--wp-6,
+.js--wp-7,
+.js--wp-8,
+.js--wp-9,
+.js--wp-10,
+.js--wp-11,
+.js--wp-12
+{
+    opacity: 0;
+}
+
+.js--wp-1 .animated,
+.js--wp-2 .animated,
+.js--wp-3 .animated,
+.js--wp-4 .animated,
+.js--wp-5 .animated,
+.js--wp-6 .animated,
+.js--wp-7 .animated,
+.js--wp-8 .animated,
+.js--wp-9 .animated,
+.js--wp-10 .animated,
+.js--wp-11 .animated,
+.js--wp-12 .animated{
+    opacity: 1;
+}
